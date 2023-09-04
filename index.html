@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveStyle.css" />
+    <title>Sitio Web Bancario</title>
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Logo</a>
+
+        <button class="nav__toggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#seccion--1">Características</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#seccion--2">Operaciones</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#seccion--3">Testimonios</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--mostrar-modal" href="#"
+              >Crear cuenta</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="encabezado__titulo">
+        <h1>
+          Conectando tus
+          <span class="destacar">metas</span>
+          con soluciones<br />
+          <span class="destacar">Bancarias inteligentes</span>
+        </h1>
+        <h4>
+          Una experiencia bancaria más sencilla para una vida más sencilla.
+        </h4>
+        <button class="btn--texto btn--ir-a">
+          Más información &DownArrow;
+        </button>
+        <img
+          src="img/hero.png"
+          class="encabezado__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="seccion" id="seccion--1">
+      <div class="seccion__titulo">
+        <h2 class="seccion__descripcion">Características</h2>
+        <h3 class="seccion__encabezado">
+          Todo lo que necesitas en un Banco moderno y mucho más.
+        </h3>
+      </div>
+
+      <div class="caracteristicas">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="caracteristicas__img lazy-img"
+        />
+        <div class="caracteristicas__caracteristica">
+          <div class="caracteristicas__icono">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="caracteristicas__encabezado">100% banco digital</h5>
+          <p>
+            Somos un banco 100% digital, liderando la revolución financiera. Con
+            tecnología de vanguardia y un enfoque centrado en el cliente,
+            ofrecemos servicios bancarios ágiles y seguros desde la comodidad de
+            tu dispositivo
+          </p>
+        </div>
+
+        <div class="caracteristicas__caracteristica">
+          <div class="caracteristicas__icono">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="caracteristicas__encabezado">Mira tu dinero crecer</h5>
+          <p>
+            Descubre la revolución financiera con nuestro banco. Simplificamos
+            tus transacciones y servicios bancarios, llevándolos a la palma de
+            tu mano. Desde apertura de cuentas hasta préstamos y gestión de
+            inversiones, todo a tu alcance las 24/7
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="caracteristicas__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="caracteristicas__img lazy-img"
+        />
+        <div class="caracteristicas__caracteristica">
+          <div class="caracteristicas__icono">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="caracteristicas__encabezado">
+            Tarjeta débito gratis incluida
+          </h5>
+          <p>
+            Descubre la libertad financiera con nuestra propuesta de tarjeta de
+            débito gratis incluida en nuestros servicios completamente
+            digitales. Maneja tus finanzas con facilidad y sin costos
+            adicionales. Únete ahora y experimenta una nueva forma de gestionar
+            tu dinero, sin tarifas ocultas y con la conveniencia que mereces."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="seccion--2">
+      <div class="seccion__titulo">
+        <h2 class="seccion__descripcion">Operaciones</h2>
+        <h3 class="seccion__encabezado">Todo es posible y simple.</h3>
+      </div>
+
+      <div class="operaciones">
+        <div class="operaciones__tab-contenedor">
+          <button
+            class="btn operaciones__tab operaciones__tab--1 operaciones__tab--activo"
+            data-tab="1"
+          >
+            <span>01</span>Transferencias Instantáneas
+          </button>
+          <button class="btn operaciones__tab operaciones__tab--2" data-tab="2">
+            <span>02</span>Préstamos Instantános
+          </button>
+          <button class="btn operaciones__tab operaciones__tab--3" data-tab="3">
+            <span>03</span>Cierre Inmediato
+          </button>
+        </div>
+        <div
+          class="operaciones__contenido operaciones__contenido--1 operaciones__contenido--activo"
+        >
+          <div class="operaciones__icono operaciones__icono--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operaciones__encabezado">
+            Transfiere dinero a quien tú quieras, al instante!
+          </h5>
+          <p>
+            Enviar dinero nunca ha sido tan fácil. Con nuestra aplicación,
+            puedes transferir dinero a amigos, familiares o incluso hacer pagos
+            rápidos en solo unos clics. ¡La velocidad y la seguridad son nuestra
+            prioridad!
+          </p>
+        </div>
+
+        <div class="operaciones__contenido operaciones__contenido--2">
+          <div class="operaciones__icono operaciones__icono--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operaciones__encabezado">
+            Haz tus sueños realidad, con préstamos instantáneos.
+          </h5>
+          <p>
+            No dejes que la falta de dinero te detenga. Con nuestros préstamos
+            instantáneos, puedes obtener los fondos que necesitas al instante
+            para perseguir tus objetivos y ambiciones.
+          </p>
+        </div>
+        <div class="operaciones__contenido operaciones__contenido--3">
+          <div class="operaciones__icono operaciones__icono--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operaciones__encabezado">
+            ¿Ya no necesitas tu cuenta? No hay problema, cierra tu cuenta al
+            instante!
+          </h5>
+          <p>
+            Mantén el control total de tu experiencia. Si alguna vez decides que
+            no necesitas tu cuenta, nuestro sistema de cierre instantáneo te
+            permite tomar esa decisión sin demora.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="seccion--3">
+      <div class="seccion__titulo seccion__titulo--testimonio">
+        <h2 class="seccion__descripcion">No estás seguro?</h2>
+        <h3 class="seccion__encabezado">
+          Miles de personas ya están haciendo sus vidas más simple.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonio">
+            <h5 class="testimonio__encabezado">
+              La mejor decisión financiera que pude tomar!
+            </h5>
+            <blockquote class="testimonio__texto">
+              Han demostrado un compromiso excepcional con sus clientes. Desde
+              la atención personalizada hasta las soluciones innovadoras, me han
+              brindado tranquilidad y comodidad en cada transacción. Su
+              plataforma en línea es fácil de usar, y siempre me siento
+              respaldado por su equipo de servicio al cliente, que responde de
+              manera eficiente a todas mis consultas.
+            </blockquote>
+            <address class="testimonio__autor">
+              <img src="img/user-1.jpg" alt="" class="testimonio__foto" />
+              <h6 class="testimonio__nombre">Matías Ávila</h6>
+              <p class="testimonio__locacion">Santa Cruz, Chile</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonio">
+            <h5 class="testimonio__encabezado">
+              El último paso para alcanzar la simpliocidad de tus finanzas
+            </h5>
+            <blockquote class="testimonio__texto">
+              Desde el primer día, su enfoque en la claridad y la conveniencia
+              ha transformado mi relación con el dinero. Sus aplicaciones
+              intuitivas, atención al cliente excepcional y una variedad de
+              servicios bancarios sin complicaciones han hecho que administrar
+              mis finanzas sea un placer.
+            </blockquote>
+            <address class="testimonio__autor">
+              <img src="img/user-2.jpg" alt="" class="testimonio__foto" />
+              <h6 class="testimonio__nombre">Miyah Miles</h6>
+              <p class="testimonio__locacion">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonio">
+            <h5 class="testimonio__encabezado">
+              Finalmente libre de los bancos a la antigua
+            </h5>
+            <blockquote class="testimonio__texto">
+              Desde el primer día, su enfoque moderno me cautivó: transacciones
+              en línea sin complicaciones, atención al cliente siempre
+              disponible y tasas competitivas que realmente benefician mis
+              ahorros. Olvídate de las largas esperas y papeleo tedioso.
+            </blockquote>
+            <address class="testimonio__autor">
+              <img src="img/user-3.jpg" alt="" class="testimonio__foto" />
+              <h6 class="testimonio__nombre">Francisco Gomes</h6>
+              <p class="testimonio__locacion">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--izq">&larr;</button>
+        <button class="slider__btn slider__btn--der">&rarr;</button>
+        <div class="puntos"></div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--sign-up">
+      <div class="seccio__titulo">
+        <h3 class="seccion__encabezado">
+          El mejor día para unirte fue hace un año. El segundo mejor es hoy!
+        </h3>
+        <h2 class="seccion__p">Únete y sé parte de nosostros</h2>
+      </div>
+      <button class="btn btn--mostrar-modal">Crea tu cuenta ahora!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Acerca de</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Características</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Términos de uso</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Política de privacidad</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contáctanos</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">&copy; Derechos reservados 2023</p>
+    </footer>
+
+    <div class="modal oculto">
+      <button class="btn--cerrar-modal">&times;</button>
+      <h2 class="modal__encabezado">
+        Crea tu cuenta <br />
+        en solo <span class="destacar">5 minutos</span>
+      </h2>
+      <form class="modal__form">
+        <label>Nombre</label>
+        <input type="text" />
+        <label>Apellido</label>
+        <input type="text" />
+        <label>Correo electrónico</label>
+        <input type="email" />
+        <button class="btn">Siguiente paso &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay oculto"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
